@@ -1,23 +1,97 @@
-# Tweeter social network
-<sup>For Russle Rossle<sup>
+# 🐦 Tweeter – Social Network Interface
 
-**Our Commands** <br>
-<sup>------------------------<sup>
+Tweeter is a simulated social media platform that allows for user management, post creation, following systems, and feed recommendation logic.  
+This interface provides a command-line style interaction with the database and supports various user and account operations.
 
-Format - **Command** {input args}: explanation
-<br>
-  - **create** {}: create the database and its schema, no data is in the database yet <br>
-  - **generate** {}: fill the database with users, as well as random follows, random subscriptions, and random blocks <br>
-  - **adduser** {email}: add a user <br>
-  - **addaccount** {email, username, password}: add an account <br>
-  - **followAccount** {followerusername, followeeusername}: have an account follow another account <br>
-  - **unfollowAccount** {unfollowerusername, unfolloweeusername}: have an account stop following another account <br>
-  - **listUsers** {}: list all users currently registered in the database <br>
-  - **listAccounts** {}: list all accounts currently registered in the database <br>
-  - **createPost** {username, content, image, hashtag}: create a post for account username, each post contains text (content), the name of an image file (image), and a hashtag <br>
-  - **editPost** {content, image, hashtag, post_id}: edit an existing post (post_id) to instead contain text (content), the name of an image file (image), and a hashtag <br>
-  - **deletePost** {post_id}: delete a post from the database by its post_id <br>
-  - **displayFeed** {account_id}: show posts made by the accounts that user account_id is following <br>
-  - **displayRecommendedFollowees** {account_id}: recommends people to follow based on how many of your current followers follow them and gives them a rating based on the number of your following that follows them <br>
-  - **displayRecommendedFeed** {account_id}: shows recommended posts made by a recommended followee (described above) <br>
-  - **subscriberScore** {}: compares how many subscriptions an account has to how many accounts said account follows and then gives each account in the database a corresponding score. The higher the score, the higher the subscription to following ratio <br>
+---
+
+## 📋 Available Commands
+
+Each command follows this format:  
+**`command_name {arguments}`** – *Description*
+
+---
+
+### 🛠️ System Initialization
+
+- **`create {}`**  
+  Initializes the database and its schema. No user or post data is added yet.
+
+- **`generate {}`**  
+  Fills the database with:
+  - Random users
+  - Follows
+  - Subscriptions
+  - Blocks
+
+---
+
+### 👤 User & Account Management
+
+- **`adduser {email}`**  
+  Registers a new user by their email.
+
+- **`addaccount {email, username, password}`**  
+  Creates a new account for the given email with a specified username and password.
+
+- **`followAccount {followerUsername, followeeUsername}`**  
+  Makes one account follow another.
+
+- **`unfollowAccount {unfollowerUsername, unfolloweeUsername}`**  
+  Unfollows the specified account.
+
+- **`listUsers {}`**  
+  Displays a list of all registered users.
+
+- **`listAccounts {}`**  
+  Displays a list of all created accounts.
+
+---
+
+### 📝 Post Operations
+
+- **`createPost {username, content, image, hashtag}`**  
+  Creates a new post with:
+  - Text content
+  - An image filename
+  - A hashtag
+
+- **`editPost {content, image, hashtag, post_id}`**  
+  Updates a post by its `post_id` with new content, image, and hashtag.
+
+- **`deletePost {post_id}`**  
+  Deletes a post using its ID.
+
+---
+
+### 📰 Feed & Recommendations
+
+- **`displayFeed {account_id}`**  
+  Displays posts from accounts followed by the given account.
+
+- **`displayRecommendedFollowees {account_id}`**  
+  Recommends accounts to follow based on mutual connections and scoring.
+
+- **`displayRecommendedFeed {account_id}`**  
+  Shows posts from recommended followees.
+
+---
+
+### 📊 Analytics
+
+- **`subscriberScore {}`**  
+  Calculates a score for each account based on their subscription-to-following ratio.
+
+---
+
+## 📌 Notes
+
+- Command inputs must follow the exact format shown above.
+- This project was created for educational purposes to simulate social media backend logic.
+
+---
+
+## 👨‍💻 Author
+
+**Your Name Here**  
+Feel free to fork, contribute, or open issues to expand this simulated social network!
