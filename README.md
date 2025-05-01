@@ -93,5 +93,4 @@ Each command follows this format:
 
 ## 👨‍💻 Author
 
-**Your Name Here**  
-Feel free to fork, contribute, or open issues to expand this simulated social network!
+**Lexi Purser**  
