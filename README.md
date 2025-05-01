@@ -1,4 +1,4 @@
-![Tweeter Logo](TweeterLogo)
+![Tweeter Logo](TweeterLogo.png)
 
 
 # 🐦 Tweeter – Social Network Interface
