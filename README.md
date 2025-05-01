@@ -1,3 +1,6 @@
+![Tweeter Logo](TweeterLogo)
+
+
 # 🐦 Tweeter – Social Network Interface
 
 Tweeter is a simulated social media platform that allows for user management, post creation, following systems, and feed recommendation logic.  
